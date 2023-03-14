@@ -83,7 +83,22 @@ print()
 print('Greatest Decrease in Profits: '+ str(LDate) + '($' + str(GDecrease)+')')
 
 
+# open file at Analysis folder as txt file 
 
-
+f = open("Analysis/budget_result.txt", "a")
+print ('Financial Analysis', file = f)
+print('', file = f)
+print ('----------------------------', file = f)
+print('', file = f)
+print('Total Months:',TotalMonths, file = f)
+print('', file = f)
+print('Total: $' +str(TotalPL), file = f)
+print('', file = f)
+print('Average Change: $'+ str(AvgChange), file = f)
+print('', file = f)
+print('Greatest Increase in Profits: ' + str(GDate) + ' ($'+ str(GIncrease) + ')', file = f)
+print('', file = f)
+print('Greatest Decrease in Profits: '+ str(LDate) + '($' + str(GDecrease)+')', file = f)
+f.close()
 
 
